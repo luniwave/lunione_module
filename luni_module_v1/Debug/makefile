@@ -12,6 +12,8 @@ RM := rm -rf
 -include Drivers/STM32WBxx_HAL_Driver/Src/subdir.mk
 -include Core/Startup/subdir.mk
 -include Core/Src/subdir.mk
+-include Core/Inc/Fonts/subdir.mk
+-include Core/Inc/subdir.mk
 -include objects.mk
 
 ifneq ($(MAKECMDGOALS),clean)
@@ -60,8 +62,8 @@ all: main-build
 main-build: luni_module_v1.elf secondary-outputs
 
 # Tool invocations
-luni_module_v1.elf luni_module_v1.map: $(OBJS) $(USER_OBJS) /Users/eloibonte/Dev/LUNIONE_MODULE/luni_module_v1/STM32WB55RGVX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "luni_module_v1.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"/Users/eloibonte/Dev/LUNIONE_MODULE/luni_module_v1/STM32WB55RGVX_FLASH.ld" --specs=nosys.specs -Wl,-Map="luni_module_v1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+luni_module_v1.elf luni_module_v1.map: $(OBJS) $(USER_OBJS) /Users/adumoulin/Dev/_LuniOne/lunione_module/luni_module_v1/STM32WB55RGVX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "luni_module_v1.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"/Users/adumoulin/Dev/_LuniOne/lunione_module/luni_module_v1/STM32WB55RGVX_FLASH.ld" --specs=nosys.specs -Wl,-Map="luni_module_v1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
