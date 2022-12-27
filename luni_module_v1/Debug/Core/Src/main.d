@@ -36,7 +36,8 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_uart_ex.h \
  ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h \
  ../Core/Inc/epd2in9.h ../Core/Inc/Fonts/fonts.h ../Core/Inc/epdif.h \
- ../Drivers/CMSIS/Device/ST/STM32WBxx/Include/stm32wb55xx.h
+ ../Drivers/CMSIS/Device/ST/STM32WBxx/Include/stm32wb55xx.h \
+ ../Core/Inc/epdpaint.h ../Core/Inc/imagedata.h
 ../Core/Inc/main.h:
 ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal.h:
 ../Core/Inc/stm32wbxx_hal_conf.h:
@@ -78,3 +79,5 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../Core/Inc/Fonts/fonts.h:
 ../Core/Inc/epdif.h:
 ../Drivers/CMSIS/Device/ST/STM32WBxx/Include/stm32wb55xx.h:
+../Core/Inc/epdpaint.h:
+../Core/Inc/imagedata.h:

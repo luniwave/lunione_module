@@ -66,7 +66,6 @@ void Error_Handler(void);
 #define LD3_GPIO_Port GPIOB
 #define EPD_BUSY_Pin GPIO_PIN_15
 #define EPD_BUSY_GPIO_Port GPIOB
-#define EPD_BUSY_EXTI_IRQn EXTI15_10_IRQn
 #define EPD_DC_Pin GPIO_PIN_6
 #define EPD_DC_GPIO_Port GPIOC
 #define JTMS_Pin GPIO_PIN_13

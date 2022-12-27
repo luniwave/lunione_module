@@ -5,6 +5,8 @@
 "./Core/Inc/Fonts/font8.o"
 "./Core/Inc/epdif.o"
 "./Core/Src/epd2in9.o"
+"./Core/Src/epdpaint.o"
+"./Core/Src/imagedata.o"
 "./Core/Src/main.o"
 "./Core/Src/stm32wbxx_hal_msp.o"
 "./Core/Src/stm32wbxx_it.o"

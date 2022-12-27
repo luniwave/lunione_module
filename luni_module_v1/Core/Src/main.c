@@ -23,6 +23,8 @@
 /* USER CODE BEGIN Includes */
 #include "epd2in9.h"
 #include "epdif.h"
+#include "epdpaint.h"
+#include "imagedata.h"
 
 /* USER CODE END Includes */
 
@@ -46,7 +48,8 @@ SPI_HandleTypeDef hspi2;
 UART_HandleTypeDef huart1;
 
 /* USER CODE BEGIN PV */
-
+#define COLORED      0
+#define UNCOLORED    1
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -70,25 +73,7 @@ static void MX_SPI2_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-void sendCommand(uint8_t command, uint8_t* data, uint16_t size)
-{
-    HAL_GPIO_WritePin(EPD_CS_GPIO_Port, EPD_CS_Pin, GPIO_PIN_RESET);
-    HAL_GPIO_WritePin(EPD_DC_GPIO_Port, EPD_DC_Pin, GPIO_PIN_RESET);
-    HAL_SPI_Transmit(&hspi2, &command, 1, HAL_MAX_DELAY);
-    HAL_GPIO_WritePin(EPD_DC_GPIO_Port, EPD_DC_Pin, GPIO_PIN_SET);
-    HAL_SPI_Transmit(&hspi2, data, size, HAL_MAX_DELAY);
-    HAL_GPIO_WritePin(EPD_CS_GPIO_Port, EPD_CS_Pin, GPIO_PIN_SET);
-}
 
-void reset()
-{
-    HAL_GPIO_WritePin(EPD_RST_GPIO_Port, EPD_RST_Pin, GPIO_PIN_SET);
-    HAL_Delay(200);
-    HAL_GPIO_WritePin(EPD_RST_GPIO_Port, EPD_RST_Pin, GPIO_PIN_RESET);
-    HAL_Delay(1);
-    HAL_GPIO_WritePin(EPD_RST_GPIO_Port, EPD_RST_Pin, GPIO_PIN_SET);
-    HAL_Delay(200);
-}
 
 /* USER CODE END 0 */
 
@@ -101,10 +86,11 @@ int main(void)
   /* USER CODE BEGIN 1 */
 
 
-	/*unsigned char* frame_buffer = (unsigned char*)malloc(EPD_WIDTH * EPD_HEIGHT / 8);
+	unsigned char* frame_buffer = (unsigned char*)malloc(EPD_WIDTH * EPD_HEIGHT / 8);
 	char time_string[] = {'0', '0', ':', '0', '0', '\0'};
 	unsigned long time_start_ms;
-	unsigned long time_now_s;*/
+	unsigned long time_now_s;
+
 
   /* USER CODE END 1 */
 
@@ -134,14 +120,70 @@ int main(void)
   /* USER CODE BEGIN 2 */
   printf("\n\r ** LuniOne. v1.0.0 ** \n\r");
 
+  //HAL_GPIO_WritePin((GPIO_TypeDef*)pins[pin_num].port, pins[pin_num].pin, GPIO_PIN_RESET);
+ // HAL_GPIO_WritePin(EPD_RST_GPIO_Port,EPD_RST_Pin,GPIO_PIN_RESET);
 
   EPD epd;
   if (EPD_Init(&epd, lut_full_update) != 0) {
-      printf("e-Paper init failed\n");
+      printf("e-Paper init failed \n\r");
       return -1;
   }
+  else{
+	  printf("e-Paper init done \n\r");
+  }
 
+  Paint paint;
+    Paint_Init(&paint, frame_buffer, epd.width, epd.height);
+    Paint_Clear(&paint, UNCOLORED);
 
+    /* For simplicity, the arguments are explicit numerical coordinates */
+    /* Write strings to the buffer */
+    Paint_DrawFilledRectangle(&paint, 0, 10, 128, 34, COLORED);
+    Paint_DrawStringAt(&paint, 0, 14, "Hello world!", &Font16, UNCOLORED);
+    Paint_DrawStringAt(&paint, 0, 34, "e-Paper Demo", &Font16, COLORED);
+
+    /* Draw something to the frame buffer */
+    Paint_DrawRectangle(&paint, 16, 60, 56, 110, COLORED);
+    Paint_DrawLine(&paint, 16, 60, 56, 110, COLORED);
+    Paint_DrawLine(&paint, 56, 60, 16, 110, COLORED);
+    Paint_DrawCircle(&paint, 120, 90, 30, COLORED);
+    Paint_DrawFilledRectangle(&paint, 16, 130, 56, 180, COLORED);
+    Paint_DrawFilledCircle(&paint, 120, 160, 30, COLORED);
+
+    /* Display the frame_buffer */
+    EPD_SetFrameMemory(&epd, frame_buffer, 0, 0, Paint_GetWidth(&paint), Paint_GetHeight(&paint));
+    EPD_DisplayFrame(&epd);
+    EPD_DelayMs(&epd, 2000);
+
+    /**
+       *  there are 2 memory areas embedded in the e-paper display
+       *  and once the display is refreshed, the memory area will be auto-toggled,
+       *  i.e. the next action of SetFrameMemory will set the other memory area
+       *  therefore you have to set the frame memory and refresh the display twice.
+       */
+      EPD_ClearFrameMemory(&epd, 0xFF);
+      EPD_DisplayFrame(&epd);
+      EPD_ClearFrameMemory(&epd, 0xFF);
+      EPD_DisplayFrame(&epd);
+
+      /* EPD_or partial update */
+      if (EPD_Init(&epd, lut_partial_update) != 0) {
+        printf("e-Paper init failed\n");
+        return -1;
+      }
+
+      /**
+       *  there are 2 memory areas embedded in the e-paper display
+       *  and once the display is refreshed, the memory area will be auto-toggled,
+       *  i.e. the next action of SetFrameMemory will set the other memory area
+       *  therefore you have to set the frame memory and refresh the display twice.
+       */
+      EPD_SetFrameMemory(&epd, IMAGE_DATA, 0, 0, epd.width, epd.height);
+      EPD_DisplayFrame(&epd);
+      EPD_SetFrameMemory(&epd, IMAGE_DATA, 0, 0, epd.width, epd.height);
+      EPD_DisplayFrame(&epd);
+
+      time_start_ms = HAL_GetTick();
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -152,12 +194,28 @@ int main(void)
 	 /* LUNI CODE  */
 	  HAL_GPIO_TogglePin (GPIOB, LD3_Pin);
 	  printf("** Routine v2. ** \n\r");
-	  HAL_Delay (1000);   /* Insert delay 100 ms */
+	  //HAL_Delay (1000);   /* Insert delay 100 ms */
 
 
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+	  time_now_s = (HAL_GetTick() - time_start_ms) / 1000;
+	  time_string[0] = time_now_s / 60 / 10 + '0';
+	  time_string[1] = time_now_s / 60 % 10 + '0';
+	  time_string[3] = time_now_s % 60 / 10 + '0';
+	  time_string[4] = time_now_s % 60 % 10 + '0';
+
+	  Paint_SetWidth(&paint, 32);
+	  Paint_SetHeight(&paint, 96);
+	  Paint_SetRotate(&paint, ROTATE_90);
+
+	  Paint_Clear(&paint, UNCOLORED);
+	  Paint_DrawStringAt(&paint, 0, 4, time_string, &Font24, COLORED);
+	  EPD_SetFrameMemory(&epd, frame_buffer, 80, 72, Paint_GetWidth(&paint), Paint_GetHeight(&paint));
+	  EPD_DisplayFrame(&epd);
+
+	  EPD_DelayMs(&epd, 500);
   }
   /* USER CODE END 3 */
 }
@@ -182,7 +240,13 @@ void SystemClock_Config(void)
   RCC_OscInitStruct.HSEState = RCC_HSE_ON;
   RCC_OscInitStruct.HSIState = RCC_HSI_ON;
   RCC_OscInitStruct.HSICalibrationValue = RCC_HSICALIBRATION_DEFAULT;
-  RCC_OscInitStruct.PLL.PLLState = RCC_PLL_NONE;
+  RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
+  RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSE;
+  RCC_OscInitStruct.PLL.PLLM = RCC_PLLM_DIV1;
+  RCC_OscInitStruct.PLL.PLLN = 12;
+  RCC_OscInitStruct.PLL.PLLP = RCC_PLLP_DIV2;
+  RCC_OscInitStruct.PLL.PLLR = RCC_PLLR_DIV4;
+  RCC_OscInitStruct.PLL.PLLQ = RCC_PLLQ_DIV2;
   if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
   {
     Error_Handler();
@@ -193,14 +257,14 @@ void SystemClock_Config(void)
   RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK4|RCC_CLOCKTYPE_HCLK2
                               |RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK
                               |RCC_CLOCKTYPE_PCLK1|RCC_CLOCKTYPE_PCLK2;
-  RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_HSE;
-  RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
+  RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
+  RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV2;
   RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV1;
   RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
-  RCC_ClkInitStruct.AHBCLK2Divider = RCC_SYSCLK_DIV1;
-  RCC_ClkInitStruct.AHBCLK4Divider = RCC_SYSCLK_DIV1;
+  RCC_ClkInitStruct.AHBCLK2Divider = RCC_SYSCLK_DIV4;
+  RCC_ClkInitStruct.AHBCLK4Divider = RCC_SYSCLK_DIV4;
 
-  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_1) != HAL_OK)
+  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_0) != HAL_OK)
   {
     Error_Handler();
   }
@@ -252,7 +316,7 @@ static void MX_SPI2_Init(void)
   hspi2.Init.CLKPolarity = SPI_POLARITY_LOW;
   hspi2.Init.CLKPhase = SPI_PHASE_1EDGE;
   hspi2.Init.NSS = SPI_NSS_SOFT;
-  hspi2.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_16;
+  hspi2.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_4;
   hspi2.Init.FirstBit = SPI_FIRSTBIT_MSB;
   hspi2.Init.TIMode = SPI_TIMODE_DISABLE;
   hspi2.Init.CRCCalculation = SPI_CRCCALCULATION_DISABLE;
@@ -356,7 +420,7 @@ static void MX_GPIO_Init(void)
 
   /*Configure GPIO pin : EPD_BUSY_Pin */
   GPIO_InitStruct.Pin = EPD_BUSY_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
+  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(EPD_BUSY_GPIO_Port, &GPIO_InitStruct);
 
@@ -387,10 +451,6 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(GPIOD, &GPIO_InitStruct);
-
-  /* EXTI interrupt init*/
-  HAL_NVIC_SetPriority(EXTI15_10_IRQn, 0, 0);
-  HAL_NVIC_EnableIRQ(EXTI15_10_IRQn);
 
 }
 

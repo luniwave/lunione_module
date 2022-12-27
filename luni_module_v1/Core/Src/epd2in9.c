@@ -30,19 +30,23 @@
 #include "epdif.h"
 
 int EPD_Init(EPD* epd, const unsigned char* lut) {
-  epd->reset_pin = EPD_RST_Pin;
-  epd->dc_pin = EPD_DC_Pin;
-  epd->cs_pin = EPD_CS_Pin;
-  epd->busy_pin = EPD_BUSY_Pin;
-  epd->width = EPD_WIDTH;
-  epd->height = EPD_HEIGHT;
-  /* this calls the peripheral hardware interface, see epdif */
-  if (EpdInitCallback() != 0) {
-    return -1;
-  }
+	epd->reset_pin = RST_PIN;
+	epd->dc_pin = DC_PIN;
+	epd->cs_pin = CS_PIN;
+	epd->busy_pin = BUSY_PIN;
+	epd->width = EPD_WIDTH;
+	epd->height = EPD_HEIGHT;
+	/* this calls the peripheral hardware interface, see epdif */
+	if (EpdInitCallback() != 0) {
+		return -1;
+	}
+
+
+
   epd->lut = lut;
-  /* EPD hardware init start */
+
   EPD_Reset(epd);
+
   EPD_SendCommand(epd, DRIVER_OUTPUT_CONTROL);
   EPD_SendData(epd, (EPD_HEIGHT - 1) & 0xFF);
   EPD_SendData(epd, ((EPD_HEIGHT - 1) >> 8) & 0xFF);
@@ -62,6 +66,9 @@ int EPD_Init(EPD* epd, const unsigned char* lut) {
   EPD_SetLut(epd, epd->lut);
   /* EPD hardware init end */
   return 0;
+
+
+
 }
 
 /**
@@ -122,7 +129,7 @@ void EPD_Reset(EPD* epd) {
   EPD_DigitalWrite(epd, epd->reset_pin, LOW);                //module reset    
   EPD_DelayMs(epd, 200);
   EPD_DigitalWrite(epd, epd->reset_pin, HIGH);
-  EPD_DelayMs(epd, 200);    
+  EPD_DelayMs(epd, 200);
 }
 
 /**
