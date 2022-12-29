@@ -39,6 +39,8 @@
 
 // EPD2IN9 commands
 #define DRIVER_OUTPUT_CONTROL                       0x01
+#define GATE_VOLTAGE								0x03
+#define SOURCE_VOLTAGE								0x04
 #define BOOSTER_SOFT_START_CONTROL                  0x0C
 #define GATE_SCAN_START_POSITION                    0x0F
 #define DEEP_SLEEP_MODE                             0x10
@@ -49,12 +51,14 @@
 #define DISPLAY_UPDATE_CONTROL_1                    0x21
 #define DISPLAY_UPDATE_CONTROL_2                    0x22
 #define WRITE_RAM                                   0x24
+#define WRITE_RAM_BASE                              0x26
 #define WRITE_VCOM_REGISTER                         0x2C
 #define WRITE_LUT_REGISTER                          0x32
 #define OTP_SELECTION		                        0x37
 #define SET_DUMMY_LINE_PERIOD                       0x3A
 #define SET_GATE_TIME                               0x3B
 #define BORDER_WAVEFORM_CONTROL                     0x3C
+#define LUT_INIT_RESERVED		                    0x3F
 #define SET_RAM_X_ADDRESS_START_END_POSITION        0x44
 #define SET_RAM_Y_ADDRESS_START_END_POSITION        0x45
 #define SET_RAM_X_ADDRESS_COUNTER                   0x4E
