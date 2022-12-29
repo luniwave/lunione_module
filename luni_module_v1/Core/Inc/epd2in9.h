@@ -51,6 +51,7 @@
 #define WRITE_RAM                                   0x24
 #define WRITE_VCOM_REGISTER                         0x2C
 #define WRITE_LUT_REGISTER                          0x32
+#define OTP_SELECTION		                        0x37
 #define SET_DUMMY_LINE_PERIOD                       0x3A
 #define SET_GATE_TIME                               0x3B
 #define BORDER_WAVEFORM_CONTROL                     0x3C
@@ -88,8 +89,10 @@ void EPD_SetFrameMemory(
   int image_width,
   int image_height
 );
+void EPD_Clear_Full(EPD* epd);
 void EPD_ClearFrameMemory(EPD* epd, unsigned char color);
 void EPD_DisplayFrame(EPD* epd);
+void EPD_Display_full_refresh(EPD* epd);
 void EPD_Sleep(EPD* epd);
 void EPD_DelayMs(EPD* epd, unsigned int delay_time);
 void EPD_DigitalWrite(EPD* epd, int pin, int value);

@@ -118,11 +118,12 @@ int main(void)
   MX_USART1_UART_Init();
   MX_SPI2_Init();
   /* USER CODE BEGIN 2 */
-  printf("\n\r ** LuniOne. v1.0.0 ** \n\r");
+  printf("\n\r ** LuniOne. v1.0.1 ** \n\r");
 
   //HAL_GPIO_WritePin((GPIO_TypeDef*)pins[pin_num].port, pins[pin_num].pin, GPIO_PIN_RESET);
  // HAL_GPIO_WritePin(EPD_RST_GPIO_Port,EPD_RST_Pin,GPIO_PIN_RESET);
 
+  printf("DEBUT de l'initialisation \n\r");
   EPD epd;
   if (EPD_Init(&epd, lut_full_update) != 0) {
       printf("e-Paper init failed \n\r");
@@ -131,6 +132,18 @@ int main(void)
   else{
 	  printf("e-Paper init done \n\r");
   }
+
+  printf("Debut du clear...\r\n");
+  EPD_Display_full_refresh(&epd);
+  printf("Fin du clear...\r\n");
+
+
+  printf("Debut mise en veille ...\r\n");
+  EPD_Sleep(&epd);
+  printf("Fin de mise en veille ...\r\n");
+
+  return -1;
+
 
   Paint paint;
     Paint_Init(&paint, frame_buffer, epd.width, epd.height);

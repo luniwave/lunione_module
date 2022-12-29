@@ -43,27 +43,36 @@ int EPD_Init(EPD* epd, const unsigned char* lut) {
 
 
 
-  epd->lut = lut;
+	epd->lut = lut;
 
   EPD_Reset(epd);
 
+  EPD_WaitUntilIdle(epd);
+  EPD_SendCommand(epd,SW_RESET); // soft reset
+  EPD_WaitUntilIdle(epd);
+
   EPD_SendCommand(epd, DRIVER_OUTPUT_CONTROL);
-  EPD_SendData(epd, (EPD_HEIGHT - 1) & 0xFF);
-  EPD_SendData(epd, ((EPD_HEIGHT - 1) >> 8) & 0xFF);
-  EPD_SendData(epd, 0x00);                     // GD = 0; SM = 0; TB = 0;
-  EPD_SendCommand(epd, BOOSTER_SOFT_START_CONTROL);
-  EPD_SendData(epd, 0xD7);
-  EPD_SendData(epd, 0xD6);
-  EPD_SendData(epd, 0x9D);
-  EPD_SendCommand(epd, WRITE_VCOM_REGISTER);
-  EPD_SendData(epd, 0xA8);                     // VCOM 7C
-  EPD_SendCommand(epd, SET_DUMMY_LINE_PERIOD);
-  EPD_SendData(epd, 0x1A);                     // 4 dummy lines per gate
-  EPD_SendCommand(epd, SET_GATE_TIME);
-  EPD_SendData(epd, 0x08);                     // 2us per line
+  EPD_SendData(epd, 0x27);
+  EPD_SendData(epd, 0x01);
+  EPD_SendData(epd, 0x00);
+
+  // Entrymode
   EPD_SendCommand(epd, DATA_ENTRY_MODE_SETTING);
-  EPD_SendData(epd, 0x03);                     // X increment; Y increment
-  EPD_SetLut(epd, epd->lut);
+  EPD_SendData(epd, 0x03);
+
+  // Curseur de mémoire
+  EPD_SetMemoryArea(epd, 0 , 0, EPD_WIDTH-1, EPD_HEIGHT-1);
+
+  // Update mode
+  EPD_SendCommand(epd, DISPLAY_UPDATE_CONTROL_1);
+  EPD_SendData(epd, 0x00);
+  EPD_SendData(epd, 0x80);
+
+  // Set the cursor
+  EPD_SetMemoryPointer(epd,0,0);
+  EPD_WaitUntilIdle(epd);
+
+
   /* EPD hardware init end */
   return 0;
 
@@ -127,9 +136,9 @@ void EPD_WaitUntilIdle(EPD* epd) {
  */
 void EPD_Reset(EPD* epd) {
   EPD_DigitalWrite(epd, epd->reset_pin, LOW);                //module reset    
-  EPD_DelayMs(epd, 200);
+  EPD_DelayMs(epd, 10);
   EPD_DigitalWrite(epd, epd->reset_pin, HIGH);
-  EPD_DelayMs(epd, 200);
+  EPD_DelayMs(epd, 10);
 }
 
 /**
@@ -179,6 +188,59 @@ void EPD_SetFrameMemory(
 }
 
 /**
+*  @brief: clear the screen for init
+*/
+
+void EPD_Clear_Full(EPD* epd){
+
+	// Reset
+	EPD_Reset(epd);
+
+	// On met les luts
+	EPD_SetLut(epd,epd->lut);
+
+	//
+	EPD_SendCommand(epd, OTP_SELECTION);
+	EPD_SendData(epd,0x00);
+	EPD_SendData(epd,0x00);
+	EPD_SendData(epd,0x00);
+	EPD_SendData(epd,0x00);
+	EPD_SendData(epd,0x00);
+	EPD_SendData(epd,0x40);
+	EPD_SendData(epd,0x00);
+	EPD_SendData(epd,0x00);
+	EPD_SendData(epd,0x00);
+	EPD_SendData(epd,0x00);
+
+	// Border waveform
+	EPD_SendCommand(epd, BORDER_WAVEFORM_CONTROL);
+	EPD_SendData(epd,0x80);
+
+	EPD_SendCommand(epd, DISPLAY_UPDATE_CONTROL_2);
+	EPD_SendData(epd,0xC0);
+	EPD_SendCommand(epd, MASTER_ACTIVATION);
+
+	// Mémoire
+	EPD_SetMemoryArea(epd, 0 , 0, EPD_WIDTH-1, EPD_HEIGHT-1);
+	EPD_SetMemoryPointer(epd,0,0);
+
+	EPD_2IN9_V2_SendCommand(WRITE_RAM);   //Write Black and White image to RAM
+	for(int i=0;i<4736;++i)
+	{
+		EPD_SendData(epd,0xFF);
+	}
+
+	EPD_SendCommand(epd, DISPLAY_UPDATE_CONTROL_2);
+	EPD_SendData(epd,0xF7);
+	EPD_SendCommand(epd, MASTER_ACTIVATION);
+
+	EPD_WaitUntilIdle(epd);
+
+}
+
+
+
+/**
 *  @brief: clear the frame memory with the specified color.
 *          this won't update the display.
 */
@@ -202,6 +264,14 @@ void EPD_ClearFrameMemory(EPD* epd, unsigned char color) {
 void EPD_DisplayFrame(EPD* epd) {
   EPD_SendCommand(epd, DISPLAY_UPDATE_CONTROL_2);
   EPD_SendData(epd, 0xC4);
+  EPD_SendCommand(epd, MASTER_ACTIVATION);
+  EPD_SendCommand(epd, TERMINATE_FRAME_READ_WRITE);
+  EPD_WaitUntilIdle(epd);
+}
+
+void EPD_Display_full_refresh(EPD* epd) {
+  EPD_SendCommand(epd, DISPLAY_UPDATE_CONTROL_2);
+  EPD_SendData(epd, 0xF7);
   EPD_SendCommand(epd, MASTER_ACTIVATION);
   EPD_SendCommand(epd, TERMINATE_FRAME_READ_WRITE);
   EPD_WaitUntilIdle(epd);
