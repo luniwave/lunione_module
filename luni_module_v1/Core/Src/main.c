@@ -23,8 +23,11 @@
 /* USER CODE BEGIN Includes */
 #include "epd2in9.h"
 #include "epdif.h"
-#include "epdpaint.h"
 #include "imagedata.h"
+
+// Code pour paint
+#include "GUI/GUI_Paint.h"
+#include "GUI/GUI_BMPfile.h"
 
 /* USER CODE END Includes */
 
@@ -154,7 +157,22 @@ int main(void)
 	EPD_DelayMs(&epd,1000);
 
 	printf("Debut affichage photo...\r\n");
-	EPD_SetFrameMemory(&epd, IMAGE_DATA, 0, 0, epd.width, epd.height);
+
+    //Create a new image cache
+    UBYTE *BlackImage;
+    UWORD Imagesize = ((epd.width % 8 == 0)? (epd.width / 8 ): (epd.width / 8 + 1)) * epd.height;
+    if((BlackImage = (UBYTE *)malloc(Imagesize)) == NULL) {
+        printf("Failed to apply for black memory...\r\n");
+        return -1;
+    }
+    printf("Paint_NewImage\r\n");
+
+    Paint_NewImage(BlackImage, epd.width, epd.height, 0, WHITE);
+	Paint_SelectImage(BlackImage);
+	GUI_ReadBmp("./res/luniwave.bmp", 0, 0);
+
+	EPD_SetFrameMemory(&epd, BlackImage, 0, 0, epd.width, epd.height);
+	//EPD_SetFrameMemory(&epd, LUNIWAVE_DATA, 0, 0, epd.width, epd.height);
 
 	printf("Fin affichage photo...\r\n");
 
@@ -165,58 +183,6 @@ int main(void)
 	return -1;
 
 
-	Paint paint;
-	Paint_Init(&paint, frame_buffer, epd.width, epd.height);
-	Paint_Clear(&paint, UNCOLORED);
-
-	/* For simplicity, the arguments are explicit numerical coordinates */
-	/* Write strings to the buffer */
-	Paint_DrawFilledRectangle(&paint, 0, 10, 128, 34, COLORED);
-	Paint_DrawStringAt(&paint, 0, 14, "Hello world!", &Font16, UNCOLORED);
-	Paint_DrawStringAt(&paint, 0, 34, "e-Paper Demo", &Font16, COLORED);
-
-	/* Draw something to the frame buffer */
-	Paint_DrawRectangle(&paint, 16, 60, 56, 110, COLORED);
-	Paint_DrawLine(&paint, 16, 60, 56, 110, COLORED);
-	Paint_DrawLine(&paint, 56, 60, 16, 110, COLORED);
-	Paint_DrawCircle(&paint, 120, 90, 30, COLORED);
-	Paint_DrawFilledRectangle(&paint, 16, 130, 56, 180, COLORED);
-	Paint_DrawFilledCircle(&paint, 120, 160, 30, COLORED);
-
-	/* Display the frame_buffer */
-	EPD_SetFrameMemory(&epd, frame_buffer, 0, 0, Paint_GetWidth(&paint), Paint_GetHeight(&paint));
-	EPD_DisplayFrame(&epd);
-	EPD_DelayMs(&epd, 2000);
-
-	/**
-	 *  there are 2 memory areas embedded in the e-paper display
-	 *  and once the display is refreshed, the memory area will be auto-toggled,
-	 *  i.e. the next action of SetFrameMemory will set the other memory area
-	 *  therefore you have to set the frame memory and refresh the display twice.
-	 */
-	EPD_ClearFrameMemory(&epd, 0xFF);
-	EPD_DisplayFrame(&epd);
-	EPD_ClearFrameMemory(&epd, 0xFF);
-	EPD_DisplayFrame(&epd);
-
-	/* EPD_or partial update */
-	if (EPD_Init(&epd, lut_partial_update) != 0) {
-		printf("e-Paper init failed\n");
-		return -1;
-	}
-
-	/**
-	 *  there are 2 memory areas embedded in the e-paper display
-	 *  and once the display is refreshed, the memory area will be auto-toggled,
-	 *  i.e. the next action of SetFrameMemory will set the other memory area
-	 *  therefore you have to set the frame memory and refresh the display twice.
-	 */
-	EPD_SetFrameMemory(&epd, IMAGE_DATA, 0, 0, epd.width, epd.height);
-	EPD_DisplayFrame(&epd);
-	EPD_SetFrameMemory(&epd, IMAGE_DATA, 0, 0, epd.width, epd.height);
-	EPD_DisplayFrame(&epd);
-
-	time_start_ms = HAL_GetTick();
 	/* USER CODE END 2 */
 
 	/* Infinite loop */
@@ -224,31 +190,10 @@ int main(void)
 	while (1)
 	{
 
-		/* LUNI CODE  */
-		HAL_GPIO_TogglePin (GPIOB, LD3_Pin);
-		printf("** Routine v2. ** \n\r");
-		//HAL_Delay (1000);   /* Insert delay 100 ms */
-
-
 		/* USER CODE END WHILE */
 
 		/* USER CODE BEGIN 3 */
-		time_now_s = (HAL_GetTick() - time_start_ms) / 1000;
-		time_string[0] = time_now_s / 60 / 10 + '0';
-		time_string[1] = time_now_s / 60 % 10 + '0';
-		time_string[3] = time_now_s % 60 / 10 + '0';
-		time_string[4] = time_now_s % 60 % 10 + '0';
 
-		Paint_SetWidth(&paint, 32);
-		Paint_SetHeight(&paint, 96);
-		Paint_SetRotate(&paint, ROTATE_90);
-
-		Paint_Clear(&paint, UNCOLORED);
-		Paint_DrawStringAt(&paint, 0, 4, time_string, &Font24, COLORED);
-		EPD_SetFrameMemory(&epd, frame_buffer, 80, 72, Paint_GetWidth(&paint), Paint_GetHeight(&paint));
-		EPD_DisplayFrame(&epd);
-
-		EPD_DelayMs(&epd, 500);
 	}
 	/* USER CODE END 3 */
 }
