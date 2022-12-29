@@ -154,7 +154,7 @@ int main(void)
 	EPD_DelayMs(&epd,1000);
 
 	printf("Debut affichage photo...\r\n");
-	//EPD_SetFrameMemory(&epd, LUNIWAVE_DATA, 0, 0, epd.width, epd.height);
+	EPD_SetFrameMemory(&epd, IMAGE_DATA, 0, 0, epd.width, epd.height);
 
 	printf("Fin affichage photo...\r\n");
 
