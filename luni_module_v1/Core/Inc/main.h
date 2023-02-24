@@ -31,6 +31,7 @@ extern "C" {
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include <stdio.h>
 
 /* USER CODE END Includes */
 
@@ -63,10 +64,18 @@ void Error_Handler(void);
 #define LD2_GPIO_Port GPIOB
 #define LD3_Pin GPIO_PIN_1
 #define LD3_GPIO_Port GPIOB
+#define EPD_BUSY_Pin GPIO_PIN_15
+#define EPD_BUSY_GPIO_Port GPIOB
+#define EPD_DC_Pin GPIO_PIN_6
+#define EPD_DC_GPIO_Port GPIOC
 #define JTMS_Pin GPIO_PIN_13
 #define JTMS_GPIO_Port GPIOA
 #define JTCK_Pin GPIO_PIN_14
 #define JTCK_GPIO_Port GPIOA
+#define EPD_RST_Pin GPIO_PIN_15
+#define EPD_RST_GPIO_Port GPIOA
+#define EPD_CS_Pin GPIO_PIN_10
+#define EPD_CS_GPIO_Port GPIOC
 #define B2_Pin GPIO_PIN_0
 #define B2_GPIO_Port GPIOD
 #define B3_Pin GPIO_PIN_1
@@ -75,12 +84,9 @@ void Error_Handler(void);
 #define JTDO_GPIO_Port GPIOB
 #define LD1_Pin GPIO_PIN_5
 #define LD1_GPIO_Port GPIOB
-#define STLINK_RX_Pin GPIO_PIN_6
-#define STLINK_RX_GPIO_Port GPIOB
-#define STLINK_TX_Pin GPIO_PIN_7
-#define STLINK_TX_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
+
 
 /* USER CODE END Private defines */
 

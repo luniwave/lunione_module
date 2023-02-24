@@ -1,0 +1,17 @@
+../Core/Inc/GUI/GUI_Paint.c:96:6:Paint_NewImage	24	static
+../Core/Inc/GUI/GUI_Paint.c:127:6:Paint_SelectImage	16	static
+../Core/Inc/GUI/GUI_Paint.c:137:6:Paint_SetRotate	16	static
+../Core/Inc/GUI/GUI_Paint.c:152:6:Paint_SetMirroring	16	static
+../Core/Inc/GUI/GUI_Paint.c:164:6:Paint_SetScale	16	static
+../Core/Inc/GUI/GUI_Paint.c:187:6:Paint_SetPixel	48	static
+../Core/Inc/GUI/GUI_Paint.c:264:6:Paint_Clear	40	static
+../Core/Inc/GUI/GUI_Paint.c:299:6:Paint_ClearWindows	32	static
+../Core/Inc/GUI/GUI_Paint.c:318:6:Paint_DrawPoint	32	static
+../Core/Inc/GUI/GUI_Paint.c:356:6:Paint_DrawLine	64	static
+../Core/Inc/GUI/GUI_Paint.c:414:6:Paint_DrawRectangle	48	static
+../Core/Inc/GUI/GUI_Paint.c:447:6:Paint_DrawCircle	40	static
+../Core/Inc/GUI/GUI_Paint.c:516:6:Paint_DrawChar	40	static
+../Core/Inc/GUI/GUI_Paint.c:565:6:Paint_DrawString_EN	40	static
+../Core/Inc/GUI/GUI_Paint.c:611:6:Paint_DrawNum	560	static
+../Core/Inc/GUI/GUI_Paint.c:652:6:Paint_DrawTime	48	static
+../Core/Inc/GUI/GUI_Paint.c:678:6:Paint_DrawBitMap	24	static
