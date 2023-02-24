@@ -6213,28 +6213,28 @@ LOAD /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.id
  .debug_macro   0x000000000002302c      0x24e ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_uart.o
  .debug_macro   0x000000000002327a      0x22f ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_uart_ex.o
 
-.debug_line     0x0000000000000000    0x154d4
+.debug_line     0x0000000000000000    0x154d6
  .debug_line    0x0000000000000000     0x1044 ./Core/Inc/GUI/GUI_BMPfile.o
  .debug_line    0x0000000000001044     0x11de ./Core/Inc/GUI/GUI_Paint.o
  .debug_line    0x0000000000002222      0xa18 ./Core/Inc/epdif.o
  .debug_line    0x0000000000002c3a      0xcbf ./Core/Src/epd2in9.o
- .debug_line    0x00000000000038f9      0xd62 ./Core/Src/main.o
- .debug_line    0x000000000000465b      0xae5 ./Core/Src/stm32wbxx_hal_msp.o
- .debug_line    0x0000000000005140      0x9ab ./Core/Src/stm32wbxx_it.o
- .debug_line    0x0000000000005aeb      0x835 ./Core/Src/syscalls.o
- .debug_line    0x0000000000006320      0x52b ./Core/Src/sysmem.o
- .debug_line    0x000000000000684b      0x841 ./Core/Src/system_stm32wbxx.o
- .debug_line    0x000000000000708c       0x91 ./Core/Startup/startup_stm32wb55rgvx.o
- .debug_line    0x000000000000711d     0x1026 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.o
- .debug_line    0x0000000000008143      0xcf0 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_cortex.o
- .debug_line    0x0000000000008e33      0xbd1 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_gpio.o
- .debug_line    0x0000000000009a04      0xa41 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pwr.o
- .debug_line    0x000000000000a445     0x1171 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pwr_ex.o
- .debug_line    0x000000000000b5b6     0x1841 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rcc.o
- .debug_line    0x000000000000cdf7     0x1cc8 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rcc_ex.o
- .debug_line    0x000000000000eabf     0x1fca ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_spi.o
- .debug_line    0x0000000000010a89     0x3c5f ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_uart.o
- .debug_line    0x00000000000146e8      0xdec ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_uart_ex.o
+ .debug_line    0x00000000000038f9      0xd64 ./Core/Src/main.o
+ .debug_line    0x000000000000465d      0xae5 ./Core/Src/stm32wbxx_hal_msp.o
+ .debug_line    0x0000000000005142      0x9ab ./Core/Src/stm32wbxx_it.o
+ .debug_line    0x0000000000005aed      0x835 ./Core/Src/syscalls.o
+ .debug_line    0x0000000000006322      0x52b ./Core/Src/sysmem.o
+ .debug_line    0x000000000000684d      0x841 ./Core/Src/system_stm32wbxx.o
+ .debug_line    0x000000000000708e       0x91 ./Core/Startup/startup_stm32wb55rgvx.o
+ .debug_line    0x000000000000711f     0x1026 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.o
+ .debug_line    0x0000000000008145      0xcf0 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_cortex.o
+ .debug_line    0x0000000000008e35      0xbd1 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_gpio.o
+ .debug_line    0x0000000000009a06      0xa41 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pwr.o
+ .debug_line    0x000000000000a447     0x1171 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pwr_ex.o
+ .debug_line    0x000000000000b5b8     0x1841 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rcc.o
+ .debug_line    0x000000000000cdf9     0x1cc8 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rcc_ex.o
+ .debug_line    0x000000000000eac1     0x1fca ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_spi.o
+ .debug_line    0x0000000000010a8b     0x3c5f ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_uart.o
+ .debug_line    0x00000000000146ea      0xdec ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_uart_ex.o
 
 .debug_str      0x0000000000000000    0xdbffb
  .debug_str     0x0000000000000000     0xa5fd ./Core/Inc/GUI/GUI_BMPfile.o
