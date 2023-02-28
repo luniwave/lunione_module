@@ -23,7 +23,7 @@
 							<option id="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.fpu.1676580921" name="Floating-point unit" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.fpu" useByScannerDiscovery="true" value="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.fpu.value.fpv4-sp-d16" valueType="enumerated"/>
 							<option id="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.floatabi.1225295664" name="Floating-point ABI" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.floatabi" useByScannerDiscovery="true" value="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.floatabi.value.hard" valueType="enumerated"/>
 							<option id="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.target_board.622563317" name="Board" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.target_board" useByScannerDiscovery="false" value="P-NUCLEO-WB55-NUCLEO" valueType="string"/>
-							<option id="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.defaults.784431574" name="Defaults" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.defaults" useByScannerDiscovery="false" value="com.st.stm32cube.ide.common.services.build.inputs.revA.1.0.5 || Debug || true || Executable || com.st.stm32cube.ide.mcu.gnu.managedbuild.option.toolchain.value.workspace || P-NUCLEO-WB55-NUCLEO || 0 || 0 || arm-none-eabi- || ${gnu_tools_for_stm32_compiler_path} || ../Core/Inc | ../Drivers/STM32WBxx_HAL_Driver/Inc | ../Drivers/STM32WBxx_HAL_Driver/Inc/Legacy | ../Drivers/CMSIS/Device/ST/STM32WBxx/Include | ../Drivers/CMSIS/Include ||  ||  || USE_HAL_DRIVER | STM32WB55xx ||  || Drivers | Core/Startup | Core ||  ||  || ${workspace_loc:/${ProjName}/STM32WB55RGVX_FLASH.ld} || true || NonSecure ||  || secure_nsclib.o ||  || None || " valueType="string"/>
+							<option id="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.defaults.784431574" name="Defaults" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.defaults" useByScannerDiscovery="false" value="com.st.stm32cube.ide.common.services.build.inputs.revA.1.0.5 || Debug || true || Executable || com.st.stm32cube.ide.mcu.gnu.managedbuild.option.toolchain.value.workspace || P-NUCLEO-WB55-NUCLEO || 0 || 0 || arm-none-eabi- || ${gnu_tools_for_stm32_compiler_path} || ../Core/Inc | ../Drivers/STM32WBxx_HAL_Driver/Inc | ../Drivers/STM32WBxx_HAL_Driver/Inc/Legacy | ../Drivers/CMSIS/Device/ST/STM32WBxx/Include | ../Drivers/CMSIS/Include | ../STM32_WPAN/App | ../Utilities/lpm/tiny_lpm | ../Middlewares/ST/STM32_WPAN | ../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread | ../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl | ../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci | ../Middlewares/ST/STM32_WPAN/utilities | ../Middlewares/ST/STM32_WPAN/ble/core | ../Middlewares/ST/STM32_WPAN/ble/core/auto | ../Middlewares/ST/STM32_WPAN/ble/core/template | ../Middlewares/ST/STM32_WPAN/ble/svc/Inc | ../Middlewares/ST/STM32_WPAN/ble/svc/Src | ../Utilities/sequencer | ../Middlewares/ST/STM32_WPAN/ble ||  ||  || USE_HAL_DRIVER | STM32WB55xx ||  || Utilities | Drivers | STM32_WPAN | Core/Startup | Middlewares | Core ||  ||  || ${workspace_loc:/${ProjName}/STM32WB55RGVX_FLASH.ld} || true || NonSecure ||  || secure_nsclib.o ||  || None || " valueType="string"/>
 							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="com.st.stm32cube.ide.mcu.gnu.managedbuild.targetplatform.1001250764" isAbstract="false" osList="all" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.targetplatform"/>
 							<builder buildPath="${workspace_loc:/luni_module_v1}/Debug" id="com.st.stm32cube.ide.mcu.gnu.managedbuild.builder.243183971" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Gnu Make Builder" parallelBuildOn="true" parallelizationNumber="optimal" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.builder"/>
 							<tool id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.assembler.1471137267" name="MCU GCC Assembler" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.assembler">
@@ -47,6 +47,20 @@
 									<listOptionValue builtIn="false" value="../Drivers/STM32WBxx_HAL_Driver/Inc/Legacy"/>
 									<listOptionValue builtIn="false" value="../Drivers/CMSIS/Device/ST/STM32WBxx/Include"/>
 									<listOptionValue builtIn="false" value="../Drivers/CMSIS/Include"/>
+									<listOptionValue builtIn="false" value="../STM32_WPAN/App"/>
+									<listOptionValue builtIn="false" value="../Utilities/lpm/tiny_lpm"/>
+									<listOptionValue builtIn="false" value="../Middlewares/ST/STM32_WPAN"/>
+									<listOptionValue builtIn="false" value="../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread"/>
+									<listOptionValue builtIn="false" value="../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl"/>
+									<listOptionValue builtIn="false" value="../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci"/>
+									<listOptionValue builtIn="false" value="../Middlewares/ST/STM32_WPAN/utilities"/>
+									<listOptionValue builtIn="false" value="../Middlewares/ST/STM32_WPAN/ble/core"/>
+									<listOptionValue builtIn="false" value="../Middlewares/ST/STM32_WPAN/ble/core/auto"/>
+									<listOptionValue builtIn="false" value="../Middlewares/ST/STM32_WPAN/ble/core/template"/>
+									<listOptionValue builtIn="false" value="../Middlewares/ST/STM32_WPAN/ble/svc/Inc"/>
+									<listOptionValue builtIn="false" value="../Middlewares/ST/STM32_WPAN/ble/svc/Src"/>
+									<listOptionValue builtIn="false" value="../Utilities/sequencer"/>
+									<listOptionValue builtIn="false" value="../Middlewares/ST/STM32_WPAN/ble"/>
 								</option>
 								<inputType id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.input.c.157538376" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.input.c"/>
 							</tool>
@@ -73,7 +87,10 @@
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="STM32_WPAN"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Core"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Utilities"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Middlewares"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Drivers"/>
 					</sourceEntries>
 				</configuration>
@@ -102,7 +119,7 @@
 							<option id="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.fpu.971204166" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.fpu" useByScannerDiscovery="true" value="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.fpu.value.fpv4-sp-d16" valueType="enumerated"/>
 							<option id="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.floatabi.1487956613" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.floatabi" useByScannerDiscovery="true" value="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.floatabi.value.hard" valueType="enumerated"/>
 							<option id="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.target_board.433041812" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.target_board" useByScannerDiscovery="false" value="P-NUCLEO-WB55-NUCLEO" valueType="string"/>
-							<option id="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.defaults.1297983238" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.defaults" useByScannerDiscovery="false" value="com.st.stm32cube.ide.common.services.build.inputs.revA.1.0.5 || Release || false || Executable || com.st.stm32cube.ide.mcu.gnu.managedbuild.option.toolchain.value.workspace || P-NUCLEO-WB55-NUCLEO || 0 || 0 || arm-none-eabi- || ${gnu_tools_for_stm32_compiler_path} || ../Core/Inc | ../Drivers/STM32WBxx_HAL_Driver/Inc | ../Drivers/STM32WBxx_HAL_Driver/Inc/Legacy | ../Drivers/CMSIS/Device/ST/STM32WBxx/Include | ../Drivers/CMSIS/Include ||  ||  || USE_HAL_DRIVER | STM32WB55xx ||  || Drivers | Core/Startup | Core ||  ||  || ${workspace_loc:/${ProjName}/STM32WB55RGVX_FLASH.ld} || true || NonSecure ||  || secure_nsclib.o ||  || None || " valueType="string"/>
+							<option id="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.defaults.1297983238" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.defaults" useByScannerDiscovery="false" value="com.st.stm32cube.ide.common.services.build.inputs.revA.1.0.5 || Release || false || Executable || com.st.stm32cube.ide.mcu.gnu.managedbuild.option.toolchain.value.workspace || P-NUCLEO-WB55-NUCLEO || 0 || 0 || arm-none-eabi- || ${gnu_tools_for_stm32_compiler_path} || ../Core/Inc | ../Drivers/STM32WBxx_HAL_Driver/Inc | ../Drivers/STM32WBxx_HAL_Driver/Inc/Legacy | ../Drivers/CMSIS/Device/ST/STM32WBxx/Include | ../Drivers/CMSIS/Include | ../STM32_WPAN/App | ../Utilities/lpm/tiny_lpm | ../Middlewares/ST/STM32_WPAN | ../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread | ../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl | ../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci | ../Middlewares/ST/STM32_WPAN/utilities | ../Middlewares/ST/STM32_WPAN/ble/core | ../Middlewares/ST/STM32_WPAN/ble/core/auto | ../Middlewares/ST/STM32_WPAN/ble/core/template | ../Middlewares/ST/STM32_WPAN/ble/svc/Inc | ../Middlewares/ST/STM32_WPAN/ble/svc/Src | ../Utilities/sequencer | ../Middlewares/ST/STM32_WPAN/ble ||  ||  || USE_HAL_DRIVER | STM32WB55xx ||  || Utilities | Drivers | STM32_WPAN | Core/Startup | Middlewares | Core ||  ||  || ${workspace_loc:/${ProjName}/STM32WB55RGVX_FLASH.ld} || true || NonSecure ||  || secure_nsclib.o ||  || None || " valueType="string"/>
 							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="com.st.stm32cube.ide.mcu.gnu.managedbuild.targetplatform.1990073398" isAbstract="false" osList="all" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.targetplatform"/>
 							<builder buildPath="${workspace_loc:/luni_module_v1}/Release" id="com.st.stm32cube.ide.mcu.gnu.managedbuild.builder.115263415" managedBuildOn="true" name="Gnu Make Builder.Release" parallelBuildOn="true" parallelizationNumber="optimal" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.builder"/>
 							<tool id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.assembler.839294258" name="MCU GCC Assembler" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.assembler">
@@ -122,6 +139,20 @@
 									<listOptionValue builtIn="false" value="../Drivers/STM32WBxx_HAL_Driver/Inc/Legacy"/>
 									<listOptionValue builtIn="false" value="../Drivers/CMSIS/Device/ST/STM32WBxx/Include"/>
 									<listOptionValue builtIn="false" value="../Drivers/CMSIS/Include"/>
+									<listOptionValue builtIn="false" value="../STM32_WPAN/App"/>
+									<listOptionValue builtIn="false" value="../Utilities/lpm/tiny_lpm"/>
+									<listOptionValue builtIn="false" value="../Middlewares/ST/STM32_WPAN"/>
+									<listOptionValue builtIn="false" value="../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread"/>
+									<listOptionValue builtIn="false" value="../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl"/>
+									<listOptionValue builtIn="false" value="../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci"/>
+									<listOptionValue builtIn="false" value="../Middlewares/ST/STM32_WPAN/utilities"/>
+									<listOptionValue builtIn="false" value="../Middlewares/ST/STM32_WPAN/ble/core"/>
+									<listOptionValue builtIn="false" value="../Middlewares/ST/STM32_WPAN/ble/core/auto"/>
+									<listOptionValue builtIn="false" value="../Middlewares/ST/STM32_WPAN/ble/core/template"/>
+									<listOptionValue builtIn="false" value="../Middlewares/ST/STM32_WPAN/ble/svc/Inc"/>
+									<listOptionValue builtIn="false" value="../Middlewares/ST/STM32_WPAN/ble/svc/Src"/>
+									<listOptionValue builtIn="false" value="../Utilities/sequencer"/>
+									<listOptionValue builtIn="false" value="../Middlewares/ST/STM32_WPAN/ble"/>
 								</option>
 								<inputType id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.input.c.1239253785" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.input.c"/>
 							</tool>
@@ -148,7 +179,10 @@
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="STM32_WPAN"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Core"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Utilities"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Middlewares"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Drivers"/>
 					</sourceEntries>
 				</configuration>
