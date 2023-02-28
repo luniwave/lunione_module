@@ -1,0 +1,4 @@
+../Core/Inc/GUI/GUI_BMPfile.c:58:7:GUI_ReadBmp	160	dynamic
+../Core/Inc/GUI/GUI_BMPfile.c:143:7:GUI_ReadBmp_4Gray	128	dynamic
+../Core/Inc/GUI/GUI_BMPfile.c:209:7:GUI_ReadBmp_RGB_7Color	128	dynamic
+../Core/Inc/GUI/GUI_BMPfile.c:288:7:GUI_ReadBmp_RGB_4Color	128	dynamic
