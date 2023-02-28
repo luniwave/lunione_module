@@ -183,7 +183,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x6a ./Core/Inc/Fonts/font12.o
  .debug_macro   0x0000000000000000      0x1df ./Core/Inc/Fonts/font12.o
  .debug_line    0x0000000000000000      0x3ae ./Core/Inc/Fonts/font12.o
- .debug_str     0x0000000000000000     0x3c98 ./Core/Inc/Fonts/font12.o
+ .debug_str     0x0000000000000000     0x3ca3 ./Core/Inc/Fonts/font12.o
  .comment       0x0000000000000000       0x51 ./Core/Inc/Fonts/font12.o
  .ARM.attributes
                 0x0000000000000000       0x34 ./Core/Inc/Fonts/font12.o
@@ -215,7 +215,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x6a ./Core/Inc/Fonts/font16.o
  .debug_macro   0x0000000000000000      0x1df ./Core/Inc/Fonts/font16.o
  .debug_line    0x0000000000000000      0x3ae ./Core/Inc/Fonts/font16.o
- .debug_str     0x0000000000000000     0x3c98 ./Core/Inc/Fonts/font16.o
+ .debug_str     0x0000000000000000     0x3ca3 ./Core/Inc/Fonts/font16.o
  .comment       0x0000000000000000       0x51 ./Core/Inc/Fonts/font16.o
  .ARM.attributes
                 0x0000000000000000       0x34 ./Core/Inc/Fonts/font16.o
@@ -247,7 +247,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x6a ./Core/Inc/Fonts/font20.o
  .debug_macro   0x0000000000000000      0x1df ./Core/Inc/Fonts/font20.o
  .debug_line    0x0000000000000000      0x3ae ./Core/Inc/Fonts/font20.o
- .debug_str     0x0000000000000000     0x3c98 ./Core/Inc/Fonts/font20.o
+ .debug_str     0x0000000000000000     0x3ca3 ./Core/Inc/Fonts/font20.o
  .comment       0x0000000000000000       0x51 ./Core/Inc/Fonts/font20.o
  .ARM.attributes
                 0x0000000000000000       0x34 ./Core/Inc/Fonts/font20.o
@@ -279,7 +279,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x6a ./Core/Inc/Fonts/font24.o
  .debug_macro   0x0000000000000000      0x1df ./Core/Inc/Fonts/font24.o
  .debug_line    0x0000000000000000      0x3ae ./Core/Inc/Fonts/font24.o
- .debug_str     0x0000000000000000     0x3c98 ./Core/Inc/Fonts/font24.o
+ .debug_str     0x0000000000000000     0x3ca3 ./Core/Inc/Fonts/font24.o
  .comment       0x0000000000000000       0x51 ./Core/Inc/Fonts/font24.o
  .ARM.attributes
                 0x0000000000000000       0x34 ./Core/Inc/Fonts/font24.o
@@ -311,7 +311,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x6a ./Core/Inc/Fonts/font8.o
  .debug_macro   0x0000000000000000      0x1df ./Core/Inc/Fonts/font8.o
  .debug_line    0x0000000000000000      0x3ad ./Core/Inc/Fonts/font8.o
- .debug_str     0x0000000000000000     0x3c95 ./Core/Inc/Fonts/font8.o
+ .debug_str     0x0000000000000000     0x3ca0 ./Core/Inc/Fonts/font8.o
  .comment       0x0000000000000000       0x51 ./Core/Inc/Fonts/font8.o
  .ARM.attributes
                 0x0000000000000000       0x34 ./Core/Inc/Fonts/font8.o
@@ -1758,7 +1758,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x15 ./Core/Src/imagedata.o
  .debug_macro   0x0000000000000000      0xa78 ./Core/Src/imagedata.o
  .debug_line    0x0000000000000000       0x53 ./Core/Src/imagedata.o
- .debug_str     0x0000000000000000     0x2d16 ./Core/Src/imagedata.o
+ .debug_str     0x0000000000000000     0x2d21 ./Core/Src/imagedata.o
  .comment       0x0000000000000000       0x51 ./Core/Src/imagedata.o
  .ARM.attributes
                 0x0000000000000000       0x34 ./Core/Src/imagedata.o
@@ -2160,7 +2160,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x67 ./Core/Src/stm32_lpm_if.o
  .debug_macro   0x0000000000000000      0x327 ./Core/Src/stm32_lpm_if.o
  .debug_line    0x0000000000000000      0xc58 ./Core/Src/stm32_lpm_if.o
- .debug_str     0x0000000000000000    0xdba81 ./Core/Src/stm32_lpm_if.o
+ .debug_str     0x0000000000000000    0xdba8c ./Core/Src/stm32_lpm_if.o
  .comment       0x0000000000000000       0x51 ./Core/Src/stm32_lpm_if.o
  .debug_frame   0x0000000000000000      0x2d4 ./Core/Src/stm32_lpm_if.o
  .ARM.attributes
@@ -3461,7 +3461,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x557 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_dma_ex.o
  .debug_macro   0x0000000000000000      0x433 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_dma_ex.o
  .debug_line    0x0000000000000000      0x946 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_dma_ex.o
- .debug_str     0x0000000000000000    0xd619e ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_dma_ex.o
+ .debug_str     0x0000000000000000    0xd61a9 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_dma_ex.o
  .comment       0x0000000000000000       0x51 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_dma_ex.o
  .debug_frame   0x0000000000000000       0xd4 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_dma_ex.o
  .ARM.attributes
@@ -3596,7 +3596,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x557 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_exti.o
  .debug_macro   0x0000000000000000      0x433 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_exti.o
  .debug_line    0x0000000000000000      0xb71 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_exti.o
- .debug_str     0x0000000000000000    0xd5fff ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_exti.o
+ .debug_str     0x0000000000000000    0xd600a ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_exti.o
  .comment       0x0000000000000000       0x51 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_exti.o
  .debug_frame   0x0000000000000000      0x174 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_exti.o
  .ARM.attributes
@@ -3741,7 +3741,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x557 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_flash.o
  .debug_macro   0x0000000000000000      0x433 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_flash.o
  .debug_line    0x0000000000000000      0xb90 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_flash.o
- .debug_str     0x0000000000000000    0xd60a6 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_flash.o
+ .debug_str     0x0000000000000000    0xd60b1 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_flash.o
  .comment       0x0000000000000000       0x51 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_flash.o
  .debug_frame   0x0000000000000000      0x220 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_flash.o
  .ARM.attributes
@@ -3910,7 +3910,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x557 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_flash_ex.o
  .debug_macro   0x0000000000000000      0x433 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_flash_ex.o
  .debug_line    0x0000000000000000      0xda0 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_flash_ex.o
- .debug_str     0x0000000000000000    0xd6313 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_flash_ex.o
+ .debug_str     0x0000000000000000    0xd631e ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_flash_ex.o
  .comment       0x0000000000000000       0x51 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_flash_ex.o
  .debug_frame   0x0000000000000000      0x3e0 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_flash_ex.o
  .ARM.attributes
@@ -5759,7 +5759,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x557 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_spi_ex.o
  .debug_macro   0x0000000000000000      0x433 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_spi_ex.o
  .debug_line    0x0000000000000000      0x83d ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_spi_ex.o
- .debug_str     0x0000000000000000    0xd626a ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_spi_ex.o
+ .debug_str     0x0000000000000000    0xd6275 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_spi_ex.o
  .comment       0x0000000000000000       0x51 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_spi_ex.o
  .debug_frame   0x0000000000000000       0x38 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_spi_ex.o
  .ARM.attributes
@@ -5875,7 +5875,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x557 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_tim.o
  .debug_macro   0x0000000000000000      0x433 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_tim.o
  .debug_line    0x0000000000000000      0x7f7 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_tim.o
- .debug_str     0x0000000000000000    0xd5cef ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_tim.o
+ .debug_str     0x0000000000000000    0xd5cfa ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_tim.o
  .comment       0x0000000000000000       0x51 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_tim.o
  .ARM.attributes
                 0x0000000000000000       0x34 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_tim.o
@@ -5990,7 +5990,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x557 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_tim_ex.o
  .debug_macro   0x0000000000000000      0x433 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_tim_ex.o
  .debug_line    0x0000000000000000      0x7fa ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_tim_ex.o
- .debug_str     0x0000000000000000    0xd5cf2 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_tim_ex.o
+ .debug_str     0x0000000000000000    0xd5cfd ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_tim_ex.o
  .comment       0x0000000000000000       0x51 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_tim_ex.o
  .ARM.attributes
                 0x0000000000000000       0x34 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_tim_ex.o
@@ -6371,7 +6371,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x11 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_rcc.o
  .debug_macro   0x0000000000000000      0xa78 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_rcc.o
  .debug_line    0x0000000000000000       0x57 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_rcc.o
- .debug_str     0x0000000000000000     0x2d01 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_rcc.o
+ .debug_str     0x0000000000000000     0x2d0c ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_rcc.o
  .comment       0x0000000000000000       0x51 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_rcc.o
  .ARM.attributes
                 0x0000000000000000       0x34 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_rcc.o
@@ -6749,7 +6749,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x40 ./Middlewares/ST/STM32_WPAN/ble/core/auto/ble_events.o
  .debug_macro   0x0000000000000000       0x16 ./Middlewares/ST/STM32_WPAN/ble/core/auto/ble_events.o
  .debug_line    0x0000000000000000     0x14c1 ./Middlewares/ST/STM32_WPAN/ble/core/auto/ble_events.o
- .debug_str     0x0000000000000000     0xdb7d ./Middlewares/ST/STM32_WPAN/ble/core/auto/ble_events.o
+ .debug_str     0x0000000000000000     0xdb88 ./Middlewares/ST/STM32_WPAN/ble/core/auto/ble_events.o
  .comment       0x0000000000000000       0x51 ./Middlewares/ST/STM32_WPAN/ble/core/auto/ble_events.o
  .debug_frame   0x0000000000000000     0x1690 ./Middlewares/ST/STM32_WPAN/ble/core/auto/ble_events.o
  .ARM.attributes
@@ -6924,7 +6924,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x34 ./Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gap_aci.o
  .debug_macro   0x0000000000000000       0x40 ./Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gap_aci.o
  .debug_line    0x0000000000000000     0x1876 ./Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gap_aci.o
- .debug_str     0x0000000000000000     0xc959 ./Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gap_aci.o
+ .debug_str     0x0000000000000000     0xc964 ./Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gap_aci.o
  .comment       0x0000000000000000       0x51 ./Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gap_aci.o
  .debug_frame   0x0000000000000000      0x858 ./Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gap_aci.o
  .ARM.attributes
@@ -7091,7 +7091,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x34 ./Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.o
  .debug_macro   0x0000000000000000       0x40 ./Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.o
  .debug_line    0x0000000000000000     0x1aaf ./Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.o
- .debug_str     0x0000000000000000     0xc3d1 ./Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.o
+ .debug_str     0x0000000000000000     0xc3dc ./Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.o
  .comment       0x0000000000000000       0x51 ./Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.o
  .debug_frame   0x0000000000000000      0x7c0 ./Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.o
  .ARM.attributes
@@ -7202,7 +7202,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x34 ./Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hal_aci.o
  .debug_macro   0x0000000000000000       0x40 ./Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hal_aci.o
  .debug_line    0x0000000000000000      0xb57 ./Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hal_aci.o
- .debug_str     0x0000000000000000     0xb999 ./Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hal_aci.o
+ .debug_str     0x0000000000000000     0xb9a4 ./Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hal_aci.o
  .comment       0x0000000000000000       0x51 ./Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hal_aci.o
  .debug_frame   0x0000000000000000      0x308 ./Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hal_aci.o
  .ARM.attributes
@@ -7429,7 +7429,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x34 ./Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.o
  .debug_macro   0x0000000000000000       0x40 ./Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.o
  .debug_line    0x0000000000000000     0x1e53 ./Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.o
- .debug_str     0x0000000000000000     0xd20a ./Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.o
+ .debug_str     0x0000000000000000     0xd215 ./Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.o
  .comment       0x0000000000000000       0x51 ./Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.o
  .debug_frame   0x0000000000000000      0xc08 ./Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.o
  .ARM.attributes
@@ -7518,7 +7518,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x34 ./Middlewares/ST/STM32_WPAN/ble/core/auto/ble_l2cap_aci.o
  .debug_macro   0x0000000000000000       0x40 ./Middlewares/ST/STM32_WPAN/ble/core/auto/ble_l2cap_aci.o
  .debug_line    0x0000000000000000      0x92f ./Middlewares/ST/STM32_WPAN/ble/core/auto/ble_l2cap_aci.o
- .debug_str     0x0000000000000000     0xb796 ./Middlewares/ST/STM32_WPAN/ble/core/auto/ble_l2cap_aci.o
+ .debug_str     0x0000000000000000     0xb7a1 ./Middlewares/ST/STM32_WPAN/ble/core/auto/ble_l2cap_aci.o
  .comment       0x0000000000000000       0x51 ./Middlewares/ST/STM32_WPAN/ble/core/auto/ble_l2cap_aci.o
  .debug_frame   0x0000000000000000      0x18c ./Middlewares/ST/STM32_WPAN/ble/core/auto/ble_l2cap_aci.o
  .ARM.attributes
@@ -7581,7 +7581,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x35 ./Middlewares/ST/STM32_WPAN/ble/core/template/osal.o
  .debug_macro   0x0000000000000000       0x20 ./Middlewares/ST/STM32_WPAN/ble/core/template/osal.o
  .debug_line    0x0000000000000000      0x551 ./Middlewares/ST/STM32_WPAN/ble/core/template/osal.o
- .debug_str     0x0000000000000000     0x62ac ./Middlewares/ST/STM32_WPAN/ble/core/template/osal.o
+ .debug_str     0x0000000000000000     0x62b7 ./Middlewares/ST/STM32_WPAN/ble/core/template/osal.o
  .comment       0x0000000000000000       0x51 ./Middlewares/ST/STM32_WPAN/ble/core/template/osal.o
  .debug_frame   0x0000000000000000       0x7c ./Middlewares/ST/STM32_WPAN/ble/core/template/osal.o
  .ARM.attributes
@@ -7864,7 +7864,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x5c6 ./Middlewares/ST/STM32_WPAN/ble/svc/Src/svc_ctl.o
  .debug_macro   0x0000000000000000       0x1c ./Middlewares/ST/STM32_WPAN/ble/svc/Src/svc_ctl.o
  .debug_line    0x0000000000000000     0x112a ./Middlewares/ST/STM32_WPAN/ble/svc/Src/svc_ctl.o
- .debug_str     0x0000000000000000    0xe8082 ./Middlewares/ST/STM32_WPAN/ble/svc/Src/svc_ctl.o
+ .debug_str     0x0000000000000000    0xe808d ./Middlewares/ST/STM32_WPAN/ble/svc/Src/svc_ctl.o
  .comment       0x0000000000000000       0x51 ./Middlewares/ST/STM32_WPAN/ble/svc/Src/svc_ctl.o
  .debug_frame   0x0000000000000000      0x2fc ./Middlewares/ST/STM32_WPAN/ble/svc/Src/svc_ctl.o
  .ARM.attributes
@@ -8119,7 +8119,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x557 ./Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci/shci.o
  .debug_macro   0x0000000000000000      0x433 ./Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci/shci.o
  .debug_line    0x0000000000000000     0x1013 ./Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci/shci.o
- .debug_str     0x0000000000000000    0xdde87 ./Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci/shci.o
+ .debug_str     0x0000000000000000    0xdde92 ./Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci/shci.o
  .comment       0x0000000000000000       0x51 ./Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci/shci.o
  .debug_frame   0x0000000000000000      0x470 ./Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci/shci.o
  .ARM.attributes
@@ -8368,7 +8368,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x13a ./Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/hci_tl.o
  .debug_macro   0x0000000000000000       0xac ./Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/hci_tl.o
  .debug_line    0x0000000000000000      0xf2c ./Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/hci_tl.o
- .debug_str     0x0000000000000000    0xe4b8b ./Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/hci_tl.o
+ .debug_str     0x0000000000000000    0xe4b96 ./Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/hci_tl.o
  .comment       0x0000000000000000       0x51 ./Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/hci_tl.o
  .debug_frame   0x0000000000000000      0x178 ./Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/hci_tl.o
  .ARM.attributes
@@ -8475,7 +8475,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x13a ./Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/hci_tl_if.o
  .debug_macro   0x0000000000000000       0xac ./Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/hci_tl_if.o
  .debug_line    0x0000000000000000      0x6be ./Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/hci_tl_if.o
- .debug_str     0x0000000000000000     0x9001 ./Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/hci_tl_if.o
+ .debug_str     0x0000000000000000     0x900c ./Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/hci_tl_if.o
  .comment       0x0000000000000000       0x51 ./Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/hci_tl_if.o
  .debug_frame   0x0000000000000000       0x38 ./Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/hci_tl_if.o
  .ARM.attributes
@@ -8607,7 +8607,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x13a ./Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/shci_tl.o
  .debug_macro   0x0000000000000000       0xac ./Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/shci_tl.o
  .debug_line    0x0000000000000000      0x8b1 ./Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/shci_tl.o
- .debug_str     0x0000000000000000     0x946a ./Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/shci_tl.o
+ .debug_str     0x0000000000000000     0x9475 ./Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/shci_tl.o
  .comment       0x0000000000000000       0x51 ./Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/shci_tl.o
  .debug_frame   0x0000000000000000      0x178 ./Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/shci_tl.o
  .ARM.attributes
@@ -8714,7 +8714,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x13a ./Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/shci_tl_if.o
  .debug_macro   0x0000000000000000       0xa6 ./Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/shci_tl_if.o
  .debug_line    0x0000000000000000      0x6c0 ./Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/shci_tl_if.o
- .debug_str     0x0000000000000000     0x9005 ./Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/shci_tl_if.o
+ .debug_str     0x0000000000000000     0x9010 ./Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/shci_tl_if.o
  .comment       0x0000000000000000       0x51 ./Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/shci_tl_if.o
  .debug_frame   0x0000000000000000       0x38 ./Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/shci_tl_if.o
  .ARM.attributes
@@ -10049,7 +10049,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x3f9 ./STM32_WPAN/App/app_ble.o
  .debug_macro   0x0000000000000000      0x134 ./STM32_WPAN/App/app_ble.o
  .debug_line    0x0000000000000000     0x146e ./STM32_WPAN/App/app_ble.o
- .debug_str     0x0000000000000000    0xeb73c ./STM32_WPAN/App/app_ble.o
+ .debug_str     0x0000000000000000    0xeb747 ./STM32_WPAN/App/app_ble.o
  .comment       0x0000000000000000       0x51 ./STM32_WPAN/App/app_ble.o
  .debug_frame   0x0000000000000000      0x270 ./STM32_WPAN/App/app_ble.o
  .ARM.attributes
@@ -10300,7 +10300,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x5c6 ./STM32_WPAN/App/custom_app.o
  .debug_macro   0x0000000000000000       0x22 ./STM32_WPAN/App/custom_app.o
  .debug_line    0x0000000000000000      0xf02 ./STM32_WPAN/App/custom_app.o
- .debug_str     0x0000000000000000    0xe829c ./STM32_WPAN/App/custom_app.o
+ .debug_str     0x0000000000000000    0xe82a7 ./STM32_WPAN/App/custom_app.o
  .comment       0x0000000000000000       0x51 ./STM32_WPAN/App/custom_app.o
  .debug_frame   0x0000000000000000       0x80 ./STM32_WPAN/App/custom_app.o
  .ARM.attributes
@@ -10546,7 +10546,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x5c6 ./STM32_WPAN/App/custom_stm.o
  .debug_macro   0x0000000000000000       0x1c ./STM32_WPAN/App/custom_stm.o
  .debug_line    0x0000000000000000      0xf47 ./STM32_WPAN/App/custom_stm.o
- .debug_str     0x0000000000000000    0xe8424 ./STM32_WPAN/App/custom_stm.o
+ .debug_str     0x0000000000000000    0xe842f ./STM32_WPAN/App/custom_stm.o
  .comment       0x0000000000000000       0x51 ./STM32_WPAN/App/custom_stm.o
  .debug_frame   0x0000000000000000       0x84 ./STM32_WPAN/App/custom_stm.o
  .ARM.attributes
@@ -10872,7 +10872,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x20 ./Utilities/lpm/tiny_lpm/stm32_lpm.o
  .debug_macro   0x0000000000000000       0x4c ./Utilities/lpm/tiny_lpm/stm32_lpm.o
  .debug_line    0x0000000000000000      0x735 ./Utilities/lpm/tiny_lpm/stm32_lpm.o
- .debug_str     0x0000000000000000     0x7b68 ./Utilities/lpm/tiny_lpm/stm32_lpm.o
+ .debug_str     0x0000000000000000     0x7b73 ./Utilities/lpm/tiny_lpm/stm32_lpm.o
  .comment       0x0000000000000000       0x51 ./Utilities/lpm/tiny_lpm/stm32_lpm.o
  .debug_frame   0x0000000000000000       0xec ./Utilities/lpm/tiny_lpm/stm32_lpm.o
  .ARM.attributes
@@ -10991,7 +10991,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x20 ./Utilities/sequencer/stm32_seq.o
  .debug_macro   0x0000000000000000       0x4c ./Utilities/sequencer/stm32_seq.o
  .debug_line    0x0000000000000000      0xb40 ./Utilities/sequencer/stm32_seq.o
- .debug_str     0x0000000000000000     0x7e38 ./Utilities/sequencer/stm32_seq.o
+ .debug_str     0x0000000000000000     0x7e43 ./Utilities/sequencer/stm32_seq.o
  .comment       0x0000000000000000       0x51 ./Utilities/sequencer/stm32_seq.o
  .debug_frame   0x0000000000000000      0x2ac ./Utilities/sequencer/stm32_seq.o
  .ARM.attributes
@@ -13317,79 +13317,79 @@ LOAD /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.id
  .debug_line    0x0000000000022d4d     0x1351 ./Middlewares/ST/STM32_WPAN/utilities/stm_queue.o
  .debug_line    0x000000000002409e     0x104a ./STM32_WPAN/Target/hw_ipcc.o
 
-.debug_str      0x0000000000000000    0xf76fb
- .debug_str     0x0000000000000000     0xa5eb ./Core/Inc/GUI/GUI_BMPfile.o
-                                       0xa89c (size before relaxing)
- .debug_str     0x000000000000a5eb      0x3cb ./Core/Inc/GUI/GUI_Paint.o
-                                       0x8ca9 (size before relaxing)
- .debug_str     0x000000000000a9b6    0xd7446 ./Core/Inc/epdif.o
-                                      0xe003e (size before relaxing)
- .debug_str     0x00000000000e1dfc     0x2f23 ./Core/Src/app_debug.o
-                                      0xe27e4 (size before relaxing)
- .debug_str     0x00000000000e4d1f     0x958a ./Core/Src/app_entry.o
-                                      0xebbf3 (size before relaxing)
- .debug_str     0x00000000000ee2a9      0x467 ./Core/Src/epd2in9.o
-                                      0xdfee2 (size before relaxing)
- .debug_str     0x00000000000ee710      0xa4b ./Core/Src/hw_timerserver.o
-                                      0xe050b (size before relaxing)
- .debug_str     0x00000000000ef15b      0x573 ./Core/Src/hw_uart.o
-                                      0xe00f6 (size before relaxing)
- .debug_str     0x00000000000ef6ce      0x630 ./Core/Src/main.o
-                                      0xe30f9 (size before relaxing)
- .debug_str     0x00000000000efcfe      0x1a9 ./Core/Src/stm32wbxx_hal_msp.o
-                                      0xe0ded (size before relaxing)
- .debug_str     0x00000000000efea7       0xe4 ./Core/Src/stm32wbxx_it.o
-                                      0xdffe4 (size before relaxing)
- .debug_str     0x00000000000eff8b     0x10e0 ./Core/Src/syscalls.o
-                                       0x8a7a (size before relaxing)
- .debug_str     0x00000000000f106b       0x6b ./Core/Src/sysmem.o
-                                       0x5db6 (size before relaxing)
- .debug_str     0x00000000000f10d6       0xb1 ./Core/Src/system_stm32wbxx.o
-                                      0xd6000 (size before relaxing)
- .debug_str     0x00000000000f1187       0x36 ./Core/Startup/startup_stm32wb55rgvx.o
-                                         0x78 (size before relaxing)
- .debug_str     0x00000000000f11bd      0x88d ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.o
-                                      0xd6ee6 (size before relaxing)
- .debug_str     0x00000000000f1a4a      0x2c5 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_cortex.o
-                                      0xd6666 (size before relaxing)
- .debug_str     0x00000000000f1d0f      0x27f ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_dma.o
-                                      0xd62c8 (size before relaxing)
- .debug_str     0x00000000000f1f8e       0xfa ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_gpio.o
-                                      0xd5fda (size before relaxing)
- .debug_str     0x00000000000f2088      0x18b ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_hsem.o
-                                      0xd5eb6 (size before relaxing)
- .debug_str     0x00000000000f2213      0x284 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_ipcc.o
-                                      0xd610e (size before relaxing)
- .debug_str     0x00000000000f2497      0x57a ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pwr.o
-                                      0xd6470 (size before relaxing)
- .debug_str     0x00000000000f2a11      0x805 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pwr_ex.o
-                                      0xd6971 (size before relaxing)
- .debug_str     0x00000000000f3216      0xb3f ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rcc.o
-                                      0xd6e5e (size before relaxing)
- .debug_str     0x00000000000f3d55      0xc40 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rcc_ex.o
-                                      0xd7287 (size before relaxing)
- .debug_str     0x00000000000f4995      0x316 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.o
-                                      0xd638d (size before relaxing)
- .debug_str     0x00000000000f4cab      0x772 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc_ex.o
-                                      0xd6892 (size before relaxing)
- .debug_str     0x00000000000f541d      0x56c ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_spi.o
-                                      0xd683d (size before relaxing)
- .debug_str     0x00000000000f5989      0x901 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_uart.o
-                                      0xd6fe0 (size before relaxing)
- .debug_str     0x00000000000f628a      0x26b ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_uart_ex.o
-                                      0xd66cc (size before relaxing)
- .debug_str     0x00000000000f64f5      0xa9f ./Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/tl_mbox.o
-                                      0xe0d63 (size before relaxing)
- .debug_str     0x00000000000f6f94      0x22f ./Middlewares/ST/STM32_WPAN/utilities/dbg_trace.o
-                                      0xdfb8c (size before relaxing)
- .debug_str     0x00000000000f71c3       0x32 ./Middlewares/ST/STM32_WPAN/utilities/otp.o
-                                      0xdf7fe (size before relaxing)
- .debug_str     0x00000000000f71f5       0xd2 ./Middlewares/ST/STM32_WPAN/utilities/stm_list.o
-                                      0xdf9f3 (size before relaxing)
- .debug_str     0x00000000000f72c7      0x18a ./Middlewares/ST/STM32_WPAN/utilities/stm_queue.o
-                                      0xdfa8b (size before relaxing)
- .debug_str     0x00000000000f7451      0x2aa ./STM32_WPAN/Target/hw_ipcc.o
-                                      0xe0983 (size before relaxing)
+.debug_str      0x0000000000000000    0xf7706
+ .debug_str     0x0000000000000000     0xa5f6 ./Core/Inc/GUI/GUI_BMPfile.o
+                                       0xa8a7 (size before relaxing)
+ .debug_str     0x000000000000a5f6      0x3cb ./Core/Inc/GUI/GUI_Paint.o
+                                       0x8cb4 (size before relaxing)
+ .debug_str     0x000000000000a9c1    0xd7446 ./Core/Inc/epdif.o
+                                      0xe0049 (size before relaxing)
+ .debug_str     0x00000000000e1e07     0x2f23 ./Core/Src/app_debug.o
+                                      0xe27ef (size before relaxing)
+ .debug_str     0x00000000000e4d2a     0x958a ./Core/Src/app_entry.o
+                                      0xebbfe (size before relaxing)
+ .debug_str     0x00000000000ee2b4      0x467 ./Core/Src/epd2in9.o
+                                      0xdfeed (size before relaxing)
+ .debug_str     0x00000000000ee71b      0xa4b ./Core/Src/hw_timerserver.o
+                                      0xe0516 (size before relaxing)
+ .debug_str     0x00000000000ef166      0x573 ./Core/Src/hw_uart.o
+                                      0xe0101 (size before relaxing)
+ .debug_str     0x00000000000ef6d9      0x630 ./Core/Src/main.o
+                                      0xe3104 (size before relaxing)
+ .debug_str     0x00000000000efd09      0x1a9 ./Core/Src/stm32wbxx_hal_msp.o
+                                      0xe0df8 (size before relaxing)
+ .debug_str     0x00000000000efeb2       0xe4 ./Core/Src/stm32wbxx_it.o
+                                      0xdffef (size before relaxing)
+ .debug_str     0x00000000000eff96     0x10e0 ./Core/Src/syscalls.o
+                                       0x8a85 (size before relaxing)
+ .debug_str     0x00000000000f1076       0x6b ./Core/Src/sysmem.o
+                                       0x5dc1 (size before relaxing)
+ .debug_str     0x00000000000f10e1       0xb1 ./Core/Src/system_stm32wbxx.o
+                                      0xd600b (size before relaxing)
+ .debug_str     0x00000000000f1192       0x36 ./Core/Startup/startup_stm32wb55rgvx.o
+                                         0x83 (size before relaxing)
+ .debug_str     0x00000000000f11c8      0x88d ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.o
+                                      0xd6ef1 (size before relaxing)
+ .debug_str     0x00000000000f1a55      0x2c5 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_cortex.o
+                                      0xd6671 (size before relaxing)
+ .debug_str     0x00000000000f1d1a      0x27f ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_dma.o
+                                      0xd62d3 (size before relaxing)
+ .debug_str     0x00000000000f1f99       0xfa ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_gpio.o
+                                      0xd5fe5 (size before relaxing)
+ .debug_str     0x00000000000f2093      0x18b ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_hsem.o
+                                      0xd5ec1 (size before relaxing)
+ .debug_str     0x00000000000f221e      0x284 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_ipcc.o
+                                      0xd6119 (size before relaxing)
+ .debug_str     0x00000000000f24a2      0x57a ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pwr.o
+                                      0xd647b (size before relaxing)
+ .debug_str     0x00000000000f2a1c      0x805 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pwr_ex.o
+                                      0xd697c (size before relaxing)
+ .debug_str     0x00000000000f3221      0xb3f ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rcc.o
+                                      0xd6e69 (size before relaxing)
+ .debug_str     0x00000000000f3d60      0xc40 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rcc_ex.o
+                                      0xd7292 (size before relaxing)
+ .debug_str     0x00000000000f49a0      0x316 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.o
+                                      0xd6398 (size before relaxing)
+ .debug_str     0x00000000000f4cb6      0x772 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc_ex.o
+                                      0xd689d (size before relaxing)
+ .debug_str     0x00000000000f5428      0x56c ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_spi.o
+                                      0xd6848 (size before relaxing)
+ .debug_str     0x00000000000f5994      0x901 ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_uart.o
+                                      0xd6feb (size before relaxing)
+ .debug_str     0x00000000000f6295      0x26b ./Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_uart_ex.o
+                                      0xd66d7 (size before relaxing)
+ .debug_str     0x00000000000f6500      0xa9f ./Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/tl_mbox.o
+                                      0xe0d6e (size before relaxing)
+ .debug_str     0x00000000000f6f9f      0x22f ./Middlewares/ST/STM32_WPAN/utilities/dbg_trace.o
+                                      0xdfb97 (size before relaxing)
+ .debug_str     0x00000000000f71ce       0x32 ./Middlewares/ST/STM32_WPAN/utilities/otp.o
+                                      0xdf809 (size before relaxing)
+ .debug_str     0x00000000000f7200       0xd2 ./Middlewares/ST/STM32_WPAN/utilities/stm_list.o
+                                      0xdf9fe (size before relaxing)
+ .debug_str     0x00000000000f72d2      0x18a ./Middlewares/ST/STM32_WPAN/utilities/stm_queue.o
+                                      0xdfa96 (size before relaxing)
+ .debug_str     0x00000000000f745c      0x2aa ./STM32_WPAN/Target/hw_ipcc.o
+                                      0xe098e (size before relaxing)
 
 .comment        0x0000000000000000       0x50
  .comment       0x0000000000000000       0x50 ./Core/Inc/GUI/GUI_BMPfile.o
